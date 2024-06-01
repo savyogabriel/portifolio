@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Lato;
+    src: url(assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+  }
+
+body{
+    background-color: #000000;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.profile img{
+    width: 14vh;
+    height: 14vh;
+    padding: 0.4vh;
+    border-radius: 100%;
+}
+
+.profileInfos{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #cccccc;
+    border-radius: 10%;
+}
+
+.profileInfos p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #b11623;
+}
+
+.profileProjects{
+    margin-top: 15px;
+    padding: 5px 0;
+}
+
+.profileProjects .projects {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; 
+}
+
+.profileProjects .projects a{
+    font-size: 20px;
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 20px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #292c37;
+    border: 2px solid #9f111b;
+    margin: 4px 0;
+}
+
+.profileProjects .projects a:hover{
+    background-color: #9f111b;
+    color: #ffff;
+}
+
+.socialMedia{
+    margin-top: 15px;
+}
+
+.socialMedia i{
+    font-size: 30px;
+    color: #9f111b;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 650px){
+    .profileProjects .projects{
+      width: 400px;
+    }
+  }
+  
+@media (min-width: 400px) and (max-width: 500px) {
+    .profileProjects .projects{
+      width: 320px;
+    }
+  }
+  
+@media (max-width: 400px) {
+    .profileProjects .projects{
+      width: 300px;
+    }
+}
