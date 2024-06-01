@@ -23,8 +23,8 @@ body{
 }
 
 .profile img{
-    width: 14vh;
-    height: 14vh;
+    width: 150px;
+    height: 150px;
     padding: 0.4vh;
     border-radius: 100%;
 }
